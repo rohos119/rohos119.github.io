@@ -56,7 +56,7 @@ yat:
 # debug: false
 
 # If you don't want transparent header, you can set false
-header_transparent: false
+# header_transparent: true
 
 # If you want to change the content width, you can set to another value
 # content_width: "920px"
@@ -106,7 +106,7 @@ translate_langs:
 # theme_color: snowwhite
 #
 # Custom color as below:
- theme_color: "#353535"
+ theme_color: "#090a0b"
 
 # You can choose a brand color
 # Default brand colors as below:
