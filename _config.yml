@@ -134,7 +134,7 @@ translate_langs:
 # it will be always kept on every visit (i.e. no matter
 # the browser is closed or not)
 #
-night_mode: "off"
+night_mode: "manual"
 
 # Code badge setting
 # You can enable or disable the code badge and so on
@@ -156,9 +156,9 @@ header_pages:
 # Page default value
 # defaults:
 home:
-  heading: "To be fancy developer"
-  subheading: "always think about why, keep it mind!"
-  banner: "Your image url"
+   heading: "To be fancy developer"
+   subheading: "always think about why, keep it mind!"
+   banner: "Your image url"
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also
