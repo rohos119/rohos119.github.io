@@ -42,8 +42,7 @@ author: beomseok
 #
 copyright: "Unpublished Work (cleft) 2017-{currentYear} {author}"
 
-description: >- 
-Get IT, Make IT, lIKe nIKe
+description: Get IT, Make IT, lIKe nIKe
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 favicon: "" # the favicon for your site
