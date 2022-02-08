@@ -24,9 +24,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@domain.com
-author: GitHub User
+title: BeOOOM TRACK
+email: rohos119@gmail.com
+author: beomseok
 
 # Copyright setting
 # You can use any html code, currently below placeholders are available:
@@ -40,7 +40,7 @@ author: GitHub User
 #   "Copyright (c) 2017-{currentYear} <a href="https://example.com">{author}</a>"
 #   "Copyright © 2017-2021 Foobar"
 #
-copyright: "Unpublished Work (cleft) 2017-{currentYear} {author}"
+copyright: "Copyright (cleft) 2017-{currentYear} {author}"
 
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -134,7 +134,7 @@ translate_langs:
 # it will be always kept on every visit (i.e. no matter
 # the browser is closed or not)
 #
-# night_mode: "auto"
+ night_mode: "off"
 
 # Code badge setting
 # You can enable or disable the code badge and so on
@@ -146,19 +146,19 @@ translate_langs:
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
-# header_pages:
-#   - index.html
-#   - archives.html
-#   - categories.html
-#   - tags.html
-#   - about.md
+ header_pages:
+   - index.html
+   - study.html
+   - programing.html
+   - tags.html
+   - about.md
 
 # Page default value
 # defaults:
-#   home:
-#     heading: "Your awesome heading"
-#     subheading: "Your awesome subheading"
-#     banner: "Your image url"
+ home:
+     heading: "To be fancy developer"
+     subheading: "always think about why, keep it mind!"
+     banner: "Your image url"
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also
