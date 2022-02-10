@@ -188,7 +188,7 @@ bundle exec jekyll serve
 
 <span style="color:red;">빨간밑줄</span> 친 로컬 서버로 들어가면 아래와 같은 화면이 나온다!
 
-
+실행결과:
 ![이미지](/assets/images/jekyll_serve_complete.JPG)
 
 
