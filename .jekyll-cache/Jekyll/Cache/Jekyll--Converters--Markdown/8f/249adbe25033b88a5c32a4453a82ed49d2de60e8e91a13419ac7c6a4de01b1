@@ -1,0 +1,43 @@
+I"C	<p>자 이번에는 지난 포스트에 이어서  <code class="language-plaintext highlighter-rouge">Jekyll theme</code>e와 <code class="language-plaintext highlighter-rouge">admin page</code>를 생성해서 나중에 쉽게 작업할 수 있게 해보자!!</p>
+
+<h1 id="설치과정">설치과정</h1>
+<hr />
+<p><del>1. <code class="language-plaintext highlighter-rouge">Github repository</code> 생성</del></p>
+
+<p><del>2. local 실행환경(<code class="language-plaintext highlighter-rouge">Ruby</code>) 설치</del></p>
+
+<p><a href="#Jekyll-테마-적용">3. <code class="language-plaintext highlighter-rouge">Jekyll</code> 테마 적용</a></p>
+
+<p><a href="#Jekyll-amdin">4. <code class="language-plaintext highlighter-rouge">Jekyll</code> admin 페이지 적용</a></p>
+
+<h3 id="jekyll-테마-적용">Jekyll 테마 적용</h3>
+<hr />
+<p>jekyll 테마를 적용하는 방법은 크게 두가지로 나뉜다.</p>
+<ol>
+  <li><a href="#원하는-theme를-jekyll-프로젝트에-Copy&amp;Paste">원하는 theme를 jekyll 프로젝트에 Copy &amp; Paste</a></li>
+  <li><a href="#Gem을-통한-설치">Gem을 통한 설치</a></li>
+</ol>
+
+<p>위 두가지 방법 중… 솔직히 1번을 강력추천한다.
+2번을 쓰는 것은 내가 완전히 Jekyll에 대한 구조를 이해해서 Customizing이 자신 있다 라고 생각되면 하길 바란다.</p>
+
+<p>하지만 두가지 방법다 포스팅 하려고 한다!</p>
+
+<h4 id="원하는-theme를-jekyll-프로젝트에-copypaste">원하는 theme를 jekyll 프로젝트에 Copy&amp;Paste</h4>
+<hr />
+<p>먼저 무료로 배보중인 theme 사이트 링크에 접속 한다</p>
+<ul>
+  <li>Lanyon 테마 - <a href="https://jekyll-themes.com/lanyon/">https://jekyll-themes.com/lanyon/</a></li>
+  <li>Jekyll 무료 테마 - <a href="https://jekyll-themes.com/free/">https://jekyll-themes.com/free/</a></li>
+  <li>쓴이의 테마 -<a href="https://jekyll-themes.com/jekyll-theme-yat/">https://jekyll-themes.com/jekyll-theme-yat/</a></li>
+</ul>
+
+<p>솔직히.. <del>저는 테마 잘못고른거 같아서 후회…</del> 본 포스팅에선 Lanyon테마로 진행합니다</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/poole/lanyon
+</code></pre></div></div>
+
+<h4 id="gem을-통한-설치">Gem을 통한 설치</h4>
+<hr />
+
+:ET

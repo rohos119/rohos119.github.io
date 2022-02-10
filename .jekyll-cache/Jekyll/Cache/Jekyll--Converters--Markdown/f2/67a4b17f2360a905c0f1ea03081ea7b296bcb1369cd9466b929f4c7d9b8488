@@ -1,0 +1,13 @@
+I"b<p>자 이번에는 지난번에 이어서 Jekyll theme와 admin page를 생성해서 나중에 쉽게 작업할 수 있게 해보자!!</p>
+
+<p>#설치과정</p>
+
+<p><del>[1. <code class="language-plaintext highlighter-rouge">Github repository</code> 생성]</del></p>
+
+<p><del>[2. local 실행환경(<code class="language-plaintext highlighter-rouge">Ruby</code>) 설치]</del></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[3. `Jekyll` 테마 적용](#Jekyll-theme)
+  
+[4. `Jekyll` admin 페이지 적용](#Jekyll-amdin)
+</code></pre></div></div>
+:ET
