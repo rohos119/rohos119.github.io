@@ -158,7 +158,7 @@ header_pages:
 home:
   heading: "To be fancy developer"
   subheading: "always think about why, keep it mind!"
-  banner: "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=http%3A%2F%2Fcfile28.uf.tistory.com%2Fimage%2F999F814D5E15542702BDBD"
+  banner: "assets/images/banners/262BA034561F9CF01B"
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also
