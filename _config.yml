@@ -151,7 +151,7 @@ header_pages:
   - study.html
   - programing.html
   - tags.html
-  - about.md
+  - about.html
 
 # Page default value
 # defaults:
