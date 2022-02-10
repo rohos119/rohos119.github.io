@@ -65,7 +65,7 @@ github에 로그인 후 메인화면에서 `Repositories`를 클릭하면 `new`�
 
 
 repository 생성:
-![이미지](https://github.com/rohos119/rohos119.github.io/assets/images/Inked_create_repository.jpg)
+![이미지](/assets/images/Inked_create_repository.jpg)
 
 
 `README`파일은 왠만하면 생성하자 나중에 귀찮아 진다..
@@ -99,7 +99,7 @@ repository 생성:
 
 
 위에 설치 링크를 들어가서 빨간색 선택 :
-![이미지](https://github.com/rohos119/rohos119.github.io/assets/images/install_ruby_for_window.jpg)
+![이미지](/assets/images/install_ruby_for_window.jpg)
 
 
 클릭하고 전부 next 하고 설치가 잘되었다면
@@ -111,7 +111,7 @@ ruby -v
 
 
 실행결과 :
-![이미지](https://github.com/rohos119/rohos119.github.io/assets/images/ruby_version_check.PNG)
+![이미지](/assets/images/ruby_version_check.PNG)
 
 
 ### Jekyll 과 bundler 설치
@@ -142,7 +142,7 @@ jekyll new ./"프로젝트네임"
 위 명령어를 치면 새로운 `jekyll`프로젝트가 생성된다.
 
 생성결과 :
-![이미지](https://github.com/rohos119/rohos119.github.io/assets/images/newjekyll.PNG)
+![이미지](/assets/images/newjekyll.PNG)
 
 생성결과처럼 파일이 생성되면 완료!
 
@@ -183,13 +183,13 @@ bundle exec jekyll serve
 위 명령어를 사용하면 jekyll이 구동된다.
 
 실행결과 :
-![이미지](https://github.com/rohos119/rohos119.github.io/assets/images/jekyll_serve.PNG)
+![이미지](/assets/images/jekyll_serve.PNG)
 
 
 <span style="color:red;">빨간밑줄</span> 친 로컬 서버로 들어가면 아래와 같은 화면이 나온다!
 
 
-![이미지](https://github.com/rohos119/rohos119.github.io/assets/images/jekyll_serve_complete.jpg)
+![이미지](/assets/images/jekyll_serve_complete.jpg)
 
 
 이제 반왔다 나머지 는 다음글에서!
