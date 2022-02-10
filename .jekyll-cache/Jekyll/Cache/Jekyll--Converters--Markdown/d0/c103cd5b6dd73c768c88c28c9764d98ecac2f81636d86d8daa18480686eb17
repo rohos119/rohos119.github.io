@@ -1,0 +1,132 @@
+I""<p>오늘은 <code class="language-plaintext highlighter-rouge">github</code>에서 생성할수 있는 블로그를 만들어볼려고 한다.
+포토폴리오를 작성하려다 보니.. 나만 블로그 없어서…..ㅠ
+이제는 머리속에만 남기지 말고 글로 남겨서 언제든지 볼수 있게 하려고 한다.</p>
+
+<p><del>갑자기..자이언티 꺼내먹어요가 생각난다</del>. 무튼 거두절미하고 본론부터 들어가자</p>
+
+<p>사실 블로그를 설치 완료해야 이글을 쓸 수 있기때문에.. 이미 완료한 상황이지만
+나같이 삽질 하는 사람들을 방지하기 위해 써보자.</p>
+
+<h2 id="설치-과정">설치 과정</h2>
+
+<p><a href="#github-repository-생성">1. <code class="language-plaintext highlighter-rouge">Github repository</code> 생성</a></p>
+
+<p><a href="#local-환경에서-구동을-위해-Ruby-설치">2. local 실행환경(<code class="language-plaintext highlighter-rouge">Ruby</code>) 설치</a></p>
+
+<p><a href="#Jekyll-theme">3. <code class="language-plaintext highlighter-rouge">Jekyll</code> 테마 적용</a></p>
+
+<p><a href="#Jekyll-amdin">4. <code class="language-plaintext highlighter-rouge">Jekyll</code> admin 페이지 적용</a></p>
+
+<h2 id="github-repository-생성">Github repository 생성</h2>
+
+<p><code class="language-plaintext highlighter-rouge">github repository</code> 생성은 git을 사용하는 사람이라면 익숙할것이라고 생각한다.</p>
+
+<p>하지만 아닌 사람도 있을 수 있기에 적어보기로 하장!</p>
+
+<p>1) <a href="###username.github.io-로-프로젝트-생성"><code class="language-plaintext highlighter-rouge">username.github.io</code>로 프로젝트 생성하기</a></p>
+
+<p>2) <code class="language-plaintext highlighter-rouge">git clone</code> 으로 __작업할 디렉토리__에 복사하기</p>
+
+<p>3) <code class="language-plaintext highlighter-rouge">git add -all</code> or <code class="language-plaintext highlighter-rouge">git add .</code> 으로 staging</p>
+
+<p>4) <code class="language-plaintext highlighter-rouge">git commit -m "commit_comment"</code> 로 commit</p>
+
+<p>5) <code class="language-plaintext highlighter-rouge">git push -u origin main</code> or <code class="language-plaintext highlighter-rouge">git push -u origin master</code> 로 push</p>
+
+<p>위 과정을 순차적으로 따라하면 매우 쉽게 생성이 가능하다. 자 쉬운 과정은 제외하고 
+repo는 헷갈릴 수 있으니 작성해본다</p>
+
+<h3 id="usernamegithubio-로-프로젝트-생성">username.github.io 로 프로젝트 생성</h3>
+
+<p>github에 로그인 후 메인화면에서 <code class="language-plaintext highlighter-rouge">Repositories</code>를 클릭하면 <code class="language-plaintext highlighter-rouge">new</code>라고 새로 생성 할 수 있는 화면이 나온다 아래 사진과 같은 세팅을적용 하면 된다.</p>
+
+<p>repository 생성:
+<img src="https://github.com/rohos119/rohos119.github.io/assets/images/Inked_create_repository.jpg" alt="이미지" /></p>
+
+<p><code class="language-plaintext highlighter-rouge">README</code>파일은 왠만하면 생성하자 나중에 귀찮아 진다..</p>
+
+<h2 id="local-환경에서-구동을-위해-ruby-설치">Local 환경에서 구동을 위해 Ruby 설치</h2>
+
+<p>설치이후 실제적으로 포스팅을 할때 commit 하고  github 에서 봇이 자동 deploy 할때까지 기다리고 하면.. 너무 대기소요가 많다 해서 로컬로 확인하고 git 으로 push하는게 훨씬 수월하다.</p>
+
+<p>1) <a href="###ruby-설치하기"><code class="language-plaintext highlighter-rouge">Ruby</code> 설치하기</a> 
+2) <a href="###jekyll-과-bundler-설치"><code class="language-plaintext highlighter-rouge">gem install jekyll bundler</code></a>
+3) <a href="###jekyll-프로젝트-생성"><code class="language-plaintext highlighter-rouge">jekyll new ./</code> 로 새로운 <code class="language-plaintext highlighter-rouge">jekyll</code> 프로젝트 생성</a>
+4) <a href="###bundle-install-하기"><code class="language-plaintext highlighter-rouge">bundle install</code> 로</a>
+5) <a href="###로컬에서-구동시키기"><code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code> 로 구동시키기</a></p>
+
+<h3 id="ruby-설치하기">Ruby 설치하기</h3>
+
+<p>https://rubyinstaller.org/downloads/</p>
+
+<p>위에 설치 링크를 들어가서 빨간색 선택 :
+<img src="https://github.com/rohos119/rohos119.github.io/assets/images/install_ruby_for_window.jpg" alt="이미지" /></p>
+
+<p>클릭하고 전부 next 하고 설치가 잘되었다면
+아래명령어가 정상적으로 실행되면 된다.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">ruby</span> <span class="o">-</span><span class="n">v</span></code></pre></figure>
+
+<p>실행결과 :
+<img src="https://github.com/rohos119/rohos119.github.io/assets/images/ruby_version_check.PNG" alt="이미지" /></p>
+
+<h3 id="jekyll-과-bundler-설치">Jekyll 과 bundler 설치</h3>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">gem</span> <span class="n">install</span> <span class="n">jekyll</span> <span class="n">bundler</span></code></pre></figure>
+
+<p>위 명령어를 실행하면 jekyll과 bundler를 설치할 수 있다.</p>
+
+<p><code class="language-plaintext highlighter-rouge">jekyll</code>은 텍스트 변환 엔진으로, 마크업 언어로 글을 작성하면 변환에서 웹사이트를 만들어준다.</p>
+
+<p><code class="language-plaintext highlighter-rouge">bundler</code>는 <code class="language-plaintext highlighter-rouge">Ruby</code>프로젝트의 버전관리와 <code class="language-plaintext highlighter-rouge">gemfile</code>을 생성해준다.</p>
+
+<p>자세한 설명은 다음포스트를 올릴 에정!</p>
+
+<h3 id="jekyll-프로젝트-생성">Jekyll 프로젝트 생성</h3>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">jekyll</span> <span class="n">new</span> <span class="p">.</span><span class="nf">/</span><span class="s2">"프로젝트네임"</span></code></pre></figure>
+
+<p>위 명령어를 치면 새로운 <code class="language-plaintext highlighter-rouge">jekyll</code>프로젝트가 생성된다.</p>
+
+<p>생성결과 :
+<img src="https://github.com/rohos119/rohos119.github.io/assets/images/newjekyll.PNG" alt="이미지" /></p>
+
+<p>생성결과처럼 파일이 생성되면 완료!</p>
+
+<h3 id="bundle-install-하기">bundle install 하기</h3>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">bundle</span> <span class="n">install</span></code></pre></figure>
+
+<p><code class="language-plaintext highlighter-rouge">bundle install</code>을 실행시키면 <code class="language-plaintext highlighter-rouge">Gemfile</code> 에 기술된
+의존성에 의해 필요한 모든 <code class="language-plaintext highlighter-rouge">gem</code>을 설치한다.</p>
+
+<h3 id="bundle-install-설치시-error"><span stlye="color:red;">bundle install 설치시 error</span></h3>
+
+<p>bundle 설치시 아래와 같은 에러가 발생하면</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/jekyll-4.2.1/lib/jekyll/commands/serve/servlet.rb:3:in `require': cannot load such file -- webrick (LoadError)
+</code></pre></div></div>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">bundle</span> <span class="n">add</span> <span class="n">webrick</span> 
+<span class="n">bundle</span> <span class="n">install</span></code></pre></figure>
+
+<h2 id="이렇게-하면-해결할-수-있습니다">이렇게 하면 해결할 수 있습니다!!</h2>
+
+<h3 id="로컬에서-구동시키기">로컬에서 구동시키기</h3>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">bundle</span> <span class="nb">exec</span> <span class="n">jekyll</span> <span class="n">serve</span> </code></pre></figure>
+
+<p>위 명령어를 사용하면 jekyll이 구동된다.</p>
+
+<p>실행결과 :
+<img src="https://github.com/rohos119/rohos119.github.io/assets/images/jekyll_serve.PNG" alt="이미지" /></p>
+
+<p><span style="color:red;">빨간밑줄</span> 친 로컬 서버로 들어가면 아래와 같은 화면이 나온다!</p>
+
+<p><img src="https://github.com/rohos119/rohos119.github.io/assets/images/jekyll_serve_complete.jpg" alt="이미지" /></p>
+
+<p>이제 반왔다 나머지 는 다음글에서!</p>
+
+<p>다음글
+<a href="">[Github Blog] 블로그 생성 with Jekyll(2)</a></p>
+:ET
