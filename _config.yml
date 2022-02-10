@@ -72,7 +72,7 @@ yat:
 # sitemap: false
 
 # If you want to change site language, you can set lang option
-# lang: "en"  # default lang is en
+lang: "ko"  # default lang is en
 
 # Translate languges
 # langs refer to https://cloud.google.com/translate/docs/languages
@@ -158,7 +158,7 @@ header_pages:
 home:
   heading: "To be fancy developer"
   subheading: "always think about why, keep it mind!"
-# banner: "Your image url"
+  banner: "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=http%3A%2F%2Fcfile28.uf.tistory.com%2Fimage%2F999F814D5E15542702BDBD"
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also
