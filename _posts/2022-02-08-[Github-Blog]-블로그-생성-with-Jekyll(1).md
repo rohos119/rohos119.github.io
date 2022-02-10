@@ -189,7 +189,7 @@ bundle exec jekyll serve
 <span style="color:red;">빨간밑줄</span> 친 로컬 서버로 들어가면 아래와 같은 화면이 나온다!
 
 
-![이미지](/assets/images/jekyll_serve_complete.jpg)
+![이미지](/assets/images/jekyll_serve_complete.JPG)
 
 
 이제 반왔다 나머지 는 다음글에서!

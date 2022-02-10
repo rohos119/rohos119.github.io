@@ -51,6 +51,7 @@ ul, ol, dl, figure,
  */
 main {
   display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
+  font-size: 20px;
 }
 
 
@@ -183,10 +184,14 @@ pre {
  * Wrapper
  */
 .wrapper {
-  max-width: $content-width;
+  // max-width: $content-width;
+  // margin: auto;
+  // padding-right: $spacing-unit;
+  // padding-left: $spacing-unit;
+  max-width: 1200px;
   margin: auto;
   padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
+  //padding-left: $spacing-unit;
   @extend %clearfix;
 }
 
