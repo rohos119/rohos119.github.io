@@ -8,7 +8,7 @@ categories: Git
 자 이번에는 지난 포스트에 이어서  `Jekyll theme`e와 `admin page`를 생성해서 나중에 쉽게 작업할 수 있게 해보자!!
 
 
-# 설치과정
+## 설치과정
 ---
   ~~1. `Github repository` 생성~~
 
@@ -97,9 +97,9 @@ bundle exec jekyl server
 
 실행하면 동일한 화면이 나온다!!
 
----
-## Lanyon 구조도
 
+## Lanyon 구조도
+---
 먼저 `jekyll`의  매커니즘을 알아보자
 <ul>
 <li>post마다 md 파일이나 html 파일을 생성한다.</li>
@@ -128,11 +128,11 @@ bundle exec jekyl server
 </span><span class="id identifier rubyid_├──">├──</span> <span class="const">Gemfile</span><span class="period">.</span><span class="id identifier rubyid_lock">lock</span>  <span class="comment"># bundler version lock
 </span><span class="id identifier rubyid_└──">└──</span> <span class="id identifier rubyid_index">index</span><span class="period">.</span><span class="id identifier rubyid_html">html</span>    <span class="comment"># list all the posts on the homepage
 </span></code></pre>
----
+
 
 
 ## Jekyll admin 페이지 적용
-
+---
 결국 기본 template는 수정소요가 없고
 post에서 게시되는 `.md` 파일들을 잘 수정하면 된다.
 
