@@ -159,4 +159,4 @@ bundle exec jekyll serve
 실행하고 `http://127.0.0.1:4000/admin`을 접속 하면 아래와 같은 화면이 나올꺼다!
 
 실행결과 :
-![이미지](../assets/images/lanyon_admin_complete.JPG)
+![이미지](/assets/images/lanyon_admin_complete.JPG)
