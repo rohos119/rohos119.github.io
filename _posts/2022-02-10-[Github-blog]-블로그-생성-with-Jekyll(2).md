@@ -3,6 +3,7 @@ layout: post
 title:  "[Github Blog] 블로그 생성 with Jekyll(2)"
 date:   2022-02-10 22:56:53 +0900
 categories: Git
+tag: Github Blog
 ---
 
 자 이번에는 지난 포스트에 이어서  `Jekyll theme`e와 `admin page`를 생성해서 나중에 쉽게 작업할 수 있게 해보자!!

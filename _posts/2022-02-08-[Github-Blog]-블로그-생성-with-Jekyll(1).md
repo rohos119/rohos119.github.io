@@ -3,6 +3,7 @@ layout: post
 title:  "[Github Blog] 블로그 생성 with Jekyll(1)"
 date:   2022-02-08 23:00:53 +0900
 categories: Git
+tag : Github Blog
 ---
 오늘은 `github`에서 생성할수 있는 블로그를 만들어볼려고 한다.
 포토폴리오를 작성하려다 보니.. 나만 블로그 없어서.....ㅠ
