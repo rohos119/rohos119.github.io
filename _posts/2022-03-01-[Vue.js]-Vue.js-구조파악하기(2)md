@@ -3,7 +3,7 @@ layout: post
 title:  "[Vue.js] Vue.js 구조파악하기(2)"
 date:   2022-03-02 09:56:53 +0900
 categories: Vue.js
-tag: Vue,js
+tag: Vue.js
 ---
 
 저번 포스팅에선 `Vue.js`의 특성과 구성을 알아보았다.
