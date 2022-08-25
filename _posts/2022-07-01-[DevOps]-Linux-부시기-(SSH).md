@@ -39,7 +39,7 @@ tag: Linux Ubuntu
 
 
 
-## `SSH` 세팅
+## SSH 세팅
 
 ---
 먼저 아래의 명령어를 사용하여 `openssh-server` 패키지를 다운 받는다.
@@ -90,7 +90,7 @@ netstat -tnlp
 특정 사용자 or ip만 접근을 가능하게 하는 등의 설정은 `sshd_config`에서 설정을 해야한다. 자세한 부분은 아래에서 다루겠다.
 
 
-## `SSH`의 작동흐름
+## SSH의 작동흐름
 ---
 
 `SSH`가 작동하는 흐름은 아래와 같다
@@ -104,7 +104,7 @@ netstat -tnlp
 
 ![이미지](/assets/images/ssh_flow.PNG)
 
-## `SSH` 설정 방법
+## SSH 설정 방법
 ---
 일단 기본적으로 `SSH` TCP 통신에 기반한다.
 흔히 알려진 known port 인 `22`번 포트를 사용하고, 인증 및 암호화를 진행한다.
@@ -119,7 +119,7 @@ netstat -tnlp
 
 ---
 
-### `SSH key` 설정
+### SSH key 설정
 
 아래는 클라이언트가 원격접속지(호스트)들의 공개키를 저장하고 있는 경로이다.
 
@@ -178,7 +178,7 @@ ssh-keygen -t [rsa,dsa,ecdsa,ed25519] -b
 
 ---
 
-### `SSH ssh_config, sshd_config 옵션` 설정
+### SSH ssh_config, sshd_config 옵션 설정
 
 
 이런 `SSH`가 작동을 하기 위해서 항상 클라이언트의 연결을 대기하는 프로세스가 있어야 한다. 그렇기에 `SSH Daemon`이 항상 `Background`에서 돌아가고 있으며 `SSH Daemon`의 설정 파일은 `sshd_config` 이다

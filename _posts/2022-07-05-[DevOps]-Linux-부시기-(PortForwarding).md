@@ -50,7 +50,7 @@ tag: Linux Ubuntu
 필수불가결 하게 `Port forwarding`을 해야만 하는 경우가 발생 할 수 있다.
 
 
-## `SFTP` 세팅
+## SFTP 세팅
 ---
 
 `SFTP`는 `SSH`기반 `FTP`이다. 그렇기에 우선 `SSH`가 우선적으로 설정이 되어있다는 가정 하에 진행이 되어져야 한다.
@@ -75,7 +75,7 @@ window 사용자는 `File_zlia` 를 사용하는 것이 원할 하며 해당 사
 [File_Zila SSH key 이용해서 접속하기](https://technfin.tistory.com/entry/SSH-Key%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%B4%EC%84%9C-SFTP%EB%A1%9C-%EC%84%9C%EB%B2%84%EC%97%90-%EC%A0%91%EC%86%8D%ED%95%98%EA%B8%B0-Filezilla-sFTP-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-%EC%9D%B4%EC%9A%A9)
 
 
-## `FTP` 세팅
+## FTP 세팅
 ---
 
 `FTP`는 명령어를 전달하는 `21` 포트와 데이터를 전달하는 `20`(혹은 랜덤) 포트가 있다. 흔히 `passive`, `active` 모드로 표현된다.

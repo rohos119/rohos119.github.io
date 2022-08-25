@@ -57,7 +57,7 @@ sudo systemctl status apache2
 자세히 알아보도록 하자.
 
 먼저 아래의 설정 파일의 구조를 살펴보자
-![이미지](/assets/images/apache2_config.PNG)
+![이미지](/assets/images/apache2_config.png)
 
 `Apache`는 설정 파일에 `directives(지시문)`을 작성하여 넣으면 된다. 그러나 설정 파일이 하나가 아니라, 여러 개로 쪼개져서 만들어져 있어서, 필요한 설정을 필요한 곳에 넣어야 한다.
 
@@ -357,12 +357,6 @@ sudo systemctl status apache2
 그럼 `userdir.conf` 파일을 확인해 보자.
 
 ```linux
-<IfModule mod_userdir.c>
-    UserDir public_html // 사용자 웹서버 루트디렉터리 설정
-    UserDir disable root // 루트사용자 홈 디렉터리에 대한 접근 차단
-
-    <Directory /home/*/public_html> // 사용자 웹서버 루트디렉터리의 기본설정
-
 <IfModule mod_userdir.c>
     UserDir public_html // 사용자 웹서버 루트디렉터리 설정
     UserDir disable root // 루트사용자 홈 디렉터리에 대한 접근 차단
