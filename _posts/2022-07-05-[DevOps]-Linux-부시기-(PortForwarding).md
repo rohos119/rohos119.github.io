@@ -147,6 +147,7 @@ tag: Linux Ubuntu
 ```
 
 위 명령어를 실행하게 되면 아래와 같은 GUI가 나올 것이다.
+
 ![이미지](/assets/images/firewall-config.PNG)
 
 이런식으로 설치해서 사용하게 되면 아주 편하게 `PortForwading`과 여러 설정들을 할 수 있다.
