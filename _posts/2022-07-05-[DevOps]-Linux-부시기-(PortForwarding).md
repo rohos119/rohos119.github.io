@@ -114,7 +114,7 @@ tag: Linux Ubuntu
     sudo firewall-cmd --get-active-zones
 ```
 위 명령어를 사용하면 아래와 같은 결과가 나올것이다.
-![이미지](../assets/images/firewall_get_active_zone.PNG)
+![이미지](/assets/images/firewall_get_active_zone.PNG)
 
 보면 `network interface`인 enp0s3, enp0s8에 각각 default인 home이 들어가져 있다.
 
