@@ -343,40 +343,62 @@ default 설정을 보면 `name.conf.options`,`named.conf.local`,`named.conf.defa
 
   - 모든 시간의 단위는 초(second) 이다.
   단, M(Minute), H(Hour), D(Day), W(Week) 등을 사용할 수 있다.
-  ex) 300 -> 300초 == 5분
-  10M -> 10분
-  2H -> 2시간
-  3D -> 3일
-  4W -> 4주
+
+    ex) 300 -> 300초 == 5분
+    
+    10M -> 10분
+    
+    2H -> 2시간
+    
+    3D -> 3일
+    
+    4W -> 4주
 
   - 주석은 세미콜론(;) 으로 한다.
 
   - 호스트명 기재시, 맨 뒤에 점(.)을 꼭 붙여야 한다.
   붙이지 않으면 {기재한 내용 + ORIGIN}으로 간주된다.
-  ex) ORIGIN이 example.com.일때,
-  www -> 실제로 www.example.com. 으로 작동
-  example.com -> 실제로 example.com.example.com. 으로 작동
-  www.example.com. -> 실제로 www.example.com. 으로 작동
+
+    ex) ORIGIN이 example.com.일때,
+
+    www -> 실제로 www.example.com. 으로 작동
+    
+    example.com -> 실제로 example.com.example.com. 으로 작동
+    
+    www.example.com. -> 실제로 www.example.com. 으로 작동
 
   - 만일 호스트명으로 공백을 기재하려는 경우, @ 을 기재한다.
-  ex) ORIGIN이 example.com.일때,
-  @ -> example.com. 으로 작동
+    
+    ex) ORIGIN이 example.com.일때, @ -> example.com. 으로 작동
 
   - Zone Apex 경우에만 CNAME 레코드를 사용할 수 없다. 반드시 CNAME 레코드 대신 A 레코드를 사용해야 한다.
   타 레코드에서는 타 host명을 기재해도 된다.
   (즉, CNAME은 root domain에서 사용할 수 없다)
-  ex) ORIGIN이 example.com.일때,
-  @    300    IN    CNAME    host.com.      ; 올바르지 않은 문법
-  @    300    IN    A            1.2.3.4          ; 옳은 문법
-  @    300    IN    MX          mail.out.com. ; 옳은 문법
+
+    ex) ORIGIN이 example.com.일때,
+
+    @    300    IN    CNAME    host.com.; 
+    
+    올바르지 않은 문법
+    
+    @    300    IN    A            1.2.3.4 ; 
+    
+    옳은 문법
+    
+    @    300    IN    MX          mail.out.com. ; 
+    옳은 
+    문법
 
   - 레코드에 별도의 시간을 명시하지 않은 경우 $TTL을 따른다.
 
   - 만일 NS의 호스트명이 자신의 $ORIGIN 호스트명에 속해있을 경우,
   해당 호스트명에 해당하는 A레코드가 명시적으로 해당 Zone File에 기재되어야 한다.
-  ex) ORIGIN이 example.com. 이고 네임서버가(NS 레코드가) ns1.example.com. 인 경우,
-  ns1    IN    A    10.20.30.40
-  이 반드시 Zone File에 있어야 한다.
+
+    ex) ORIGIN이 example.com. 이고 네임서버가(NS 레코드가) ns1.example.com. 인 경우,
+
+    ns1    IN    A    10.20.30.40
+    
+    이 반드시 Zone File에 있어야 한다.
 
 그렇다면 아래 예시를 통해서, 실제 옵션들이 의미하는 것이 무엇인지 살펴보자
 
